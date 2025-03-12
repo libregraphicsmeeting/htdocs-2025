@@ -32,7 +32,7 @@
 * {
     /* if --document-font-size-pt would be dynamic according to the document
      * something like this:
-     * calc(var(--font-size, 1) * var(--document-font-size-pt, 12) * 1pt);
+     * font-size: calc(var(--font-size, 1) * var(--document-font-size-pt, 12) * 1pt);
      */
     font-size: calc(var(--font-size, 1) * 1rem);
     --text-opsz: calc(var(--font-size, 1) * var(--document-font-size-pt, 12));
@@ -69,7 +69,8 @@ i, em {
 body {
     max-width: 72em;
     margin: 0 auto;
-    background: repeating-conic-gradient(from 81.9603deg at 54.4795% 53.4716%, color(srgb 0.678291 0.999957 0.183961 / 0.24) 251.636deg, color(srgb 0.678291 0.999957 0.183961 / 0.24) 257.269deg, color(srgb 1 0.411768 0.705885 / 0.35) 321.258deg, color(srgb 1 0.411768 0.705885 / 0.35) 278.634deg, color(srgb 0.678292 0.999957 0.183961 / 0.64) 305.367deg, color(srgb 0.678292 0.999957 0.183961 / 0.64) 284.348deg, color(srgb 1 0.411768 0.705885 / 0.26) 171.895deg, color(srgb 1 0.411768 0.705885 / 0.26) 172.615deg, color(srgb 0.678291 0.999957 0.183961 / 0.096) 201.29deg, color(srgb 0.678291 0.999957 0.183961 / 0.096) 167.761deg, color(srgb 1 0.411768 0.705885 / 0.736) 100.876deg, color(srgb 1 0.411768 0.705885 / 0.736) 170.399deg), repeating-conic-gradient(from 28.652deg at 21.1301% 25.2994%, color(srgb 0.678291 0.999957 0.183961 / 0.52) 187.956deg, color(srgb 0.678291 0.999957 0.183961 / 0.52) 227.671deg, color(srgb 1 0.411768 0.705885 / 0.714) 296.99deg, color(srgb 1 0.411768 0.705885 / 0.714) 288.584deg, color(srgb 0.678291 0.999957 0.183961 / 0.552) 294.305deg, color(srgb 0.678291 0.999957 0.183961 / 0.552) 72.76deg, color(srgb 1 0.411768 0.705885 / 0.697) 182.181deg, color(srgb 1 0.411768 0.705885 / 0.697) 90.8138deg, color(srgb 0.678291 0.999957 0.183961 / 0.415) 217.87deg, color(srgb 0.678291 0.999957 0.183961 / 0.415) 195.732deg, color(srgb 1 0.411768 0.705885 / 0.48) 267.512deg, color(srgb 1 0.411768 0.705885 / 0.48) 173.085deg), repeating-conic-gradient(from 37.138deg at 53.942% 34.3715%, color(srgb 0.678291 0.999957 0.183961 / 0.76) 54.1519deg, color(srgb 0.678291 0.999957 0.183961 / 0.76) 43.0496deg, color(srgb 1 0.411768 0.705885 / 0.874) 284.457deg, color(srgb 1 0.411768 0.705885 / 0.874) 290.071deg, color(srgb 0.678291 0.999957 0.183961 / 0.715) 27.9959deg, color(srgb 0.678291 0.999957 0.183961 / 0.715) 82.3657deg, color(srgb 1 0.411768 0.705885 / 0.882) 59.0745deg, color(srgb 1 0.411768 0.705885 / 0.882) 66.9433deg, color(srgb 0.678291 0.999957 0.183961 / 0.829) 279.571deg, color(srgb 0.678291 0.999957 0.183961 / 0.829) 238.35deg, color(srgb 1 0.411768 0.705885 / 0.87) 287.701deg, color(srgb 1 0.411768 0.705885 / 0.87) 259.235deg), none
+    --background: repeating-conic-gradient(from 81.9603deg at 54.4795% 53.4716%, color(srgb 0.678291 0.999957 0.183961 / 0.24) 251.636deg, color(srgb 0.678291 0.999957 0.183961 / 0.24) 257.269deg, color(srgb 1 0.411768 0.705885 / 0.35) 321.258deg, color(srgb 1 0.411768 0.705885 / 0.35) 278.634deg, color(srgb 0.678292 0.999957 0.183961 / 0.64) 305.367deg, color(srgb 0.678292 0.999957 0.183961 / 0.64) 284.348deg, color(srgb 1 0.411768 0.705885 / 0.26) 171.895deg, color(srgb 1 0.411768 0.705885 / 0.26) 172.615deg, color(srgb 0.678291 0.999957 0.183961 / 0.096) 201.29deg, color(srgb 0.678291 0.999957 0.183961 / 0.096) 167.761deg, color(srgb 1 0.411768 0.705885 / 0.736) 100.876deg, color(srgb 1 0.411768 0.705885 / 0.736) 170.399deg), repeating-conic-gradient(from 28.652deg at 21.1301% 25.2994%, color(srgb 0.678291 0.999957 0.183961 / 0.52) 187.956deg, color(srgb 0.678291 0.999957 0.183961 / 0.52) 227.671deg, color(srgb 1 0.411768 0.705885 / 0.714) 296.99deg, color(srgb 1 0.411768 0.705885 / 0.714) 288.584deg, color(srgb 0.678291 0.999957 0.183961 / 0.552) 294.305deg, color(srgb 0.678291 0.999957 0.183961 / 0.552) 72.76deg, color(srgb 1 0.411768 0.705885 / 0.697) 182.181deg, color(srgb 1 0.411768 0.705885 / 0.697) 90.8138deg, color(srgb 0.678291 0.999957 0.183961 / 0.415) 217.87deg, color(srgb 0.678291 0.999957 0.183961 / 0.415) 195.732deg, color(srgb 1 0.411768 0.705885 / 0.48) 267.512deg, color(srgb 1 0.411768 0.705885 / 0.48) 173.085deg), repeating-conic-gradient(from 37.138deg at 53.942% 34.3715%, color(srgb 0.678291 0.999957 0.183961 / 0.76) 54.1519deg, color(srgb 0.678291 0.999957 0.183961 / 0.76) 43.0496deg, color(srgb 1 0.411768 0.705885 / 0.874) 284.457deg, color(srgb 1 0.411768 0.705885 / 0.874) 290.071deg, color(srgb 0.678291 0.999957 0.183961 / 0.715) 27.9959deg, color(srgb 0.678291 0.999957 0.183961 / 0.715) 82.3657deg, color(srgb 1 0.411768 0.705885 / 0.882) 59.0745deg, color(srgb 1 0.411768 0.705885 / 0.882) 66.9433deg, color(srgb 0.678291 0.999957 0.183961 / 0.829) 279.571deg, color(srgb 0.678291 0.999957 0.183961 / 0.829) 238.35deg, color(srgb 1 0.411768 0.705885 / 0.87) 287.701deg, color(srgb 1 0.411768 0.705885 / 0.87) 259.235deg), none;
+    background: var(--background);
 }
 
 
@@ -81,6 +82,7 @@ header :is(h1, h2){
 
 
 .wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -406,16 +408,55 @@ nav li.active > a:hover {
 }
 
 
+.donate {
+    background: var(--background);
+    position: fixed;
+    width: 10em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    left: max(3.8em, calc((100vw - 72em) / 2 + 3.8em ));
+    top: 22em;
+    border: .5em solid black;
+    background-size: 100vw 100vh;
+    background-position: -3.8em 35em;
+}
 
+.donate a {
+    --font-size: 2;
+    --text-wght: 900;
+    --text-wdth: 54;
+    text-transform: uppercase;
+    display: block;
 
+    width: 90%;
+    aspect-ratio: 1;
+    margin: 5%;
+    border-radius: 50%;
+
+    position: absolute;
+    text-align: center;
+    line-height: 4em;
+    text-decoration-style: double;
+    text-decoration-thickness: .15em;
+
+    background: black;
+    color: white;
+    text-decoration-color: greenyellow;
+}
+.donate a:hover {
+    background: white;
+    color: black;
+    text-decoration-color: deeppink;
+}
 
 @container wrapper (width <= 56em) {
     header {
         grid-template-areas:
             "logo-boxes filler-1"
-            "logo-text reimagination"
             "logo-text filler-2"
+            "logo-text reimagination"
             "nav nav";
+        grid-template-rows: auto 1fr auto var(--nav-full-height);
     }
 
     nav > ul > li:first-child > a {
@@ -427,6 +468,14 @@ nav li.active > a:hover {
 
     header .identity-logo-text {
         border-bottom: .5em solid white;
+    }
+
+    .donate {
+        left: unset;
+        right: 20%;
+        top: 3em;
+        position: absolute;
+        background: transparent;
     }
 }
 
@@ -455,6 +504,12 @@ nav li.active > a:hover {
     header .identiy-reimagination{
         border: .5em solid white;
     }
+
+    .donate {
+        left: 10%;
+        right: unset;
+        top: 3em;
+    }
 }
 @container wrapper (width <= 36em) {
     header {
@@ -465,6 +520,7 @@ nav li.active > a:hover {
         display: none;
     }
 
+  header {
     nav:before,
     nav.ui_collapsible_mixin-open:after {
         content: '•••';
@@ -561,7 +617,14 @@ nav li.active > a:hover {
     .play_pause .play_pause-purpose{
         display: inline;
     }
+  }
 
+    .donate {
+        left: unset;
+        right: 1em;
+        top: 10vw;
+        bottom: unset;
+    }
 }
 
 
@@ -581,6 +644,9 @@ nav li.active > a:hover {
     padding: 1.5em 0;
     padding-left: var(--left-padding);
     padding-right: var(--right-padding);
+}
+.content .page-nav{
+    margin-bottom: 1.5em;
 }
 
 @container wrapper (width <= 61.625em) {
@@ -697,7 +763,13 @@ nav li.active > a:hover {
     --text-wdth: 54;
     --text-wght: 500;
     margin-block-start: 0;
+    text-transform: uppercase;
 }
+
+:is(.host, .event) .content h1 {
+    text-transform: initial;
+}
+
 @container wrapper (width <= 35em) {
     .content h1 {
         --font-size: 2.5;
@@ -708,6 +780,7 @@ nav li.active > a:hover {
 
 .content .news article h1 {
     --font-size: 1.5;
+    --text-wght: 600;
 }
 
 ol.news{
@@ -724,11 +797,16 @@ ol.news{
     --text-wght: 600
 }
 
-.content :is(p, li, .sponsorship) {
+.content :is(p, li, .sponsorship, time, table.schedule) {
     --text-grad: 0;
     --font-size: 1.4;
     margin: 0;
     line-height: var(--line-height, 1.4);
+}
+
+:is(.label-events, .host-events) time {
+    display: inline;
+    --text-wght: 600;
 }
 
 .content .news li article {
@@ -784,6 +862,7 @@ ol.news{
 .call_for_action a {
     text-decoration-thickness: .1em;
     text-decoration-style: double;
+    text-transform: uppercase;
 
 }
 .call_for_action a:hover {
@@ -796,7 +875,9 @@ ol.news{
 
 .block-image {
     display: block;
-    width: 100%;
+    img {
+        max-width: 100%;
+    }
 }
 
 .content .sponsorship {
@@ -843,6 +924,124 @@ ol.news{
     --sponsor-small-max: 7em;
 }
 
+
+
+h1 .event-type{
+    --text-wght: 300;
+    white-space: nowrap;
+}
+
+:is(.label-events, .host-events) .event-type{
+    --text-wght: 600;
+    white-space: nowrap;
+}
+
+h2:has(+ .event-hosts, + .event-labels) {
+    display: inline-block;
+    --font-size: 1.4;
+}
+
+.event-hosts,
+.event-labels {
+    display: inline;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    li {
+        display: inline;
+    }
+    li:not(:last-child)::after {
+        content: ", ";
+    }
+    &:after {
+        content: '';
+        display: block;
+    }
+}
+
+.event-times {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.schedule :is(td, th){
+    vertical-align: top;
+}
+
+.schedule .page-link {
+    --text-wght: 600;
+    --text-wdth: 54;
+}
+
+.schedule .page-link:hover {
+    --text-grad: -100;
+}
+
+.content .schedule h3 {
+  margin-block: 0;
+  line-height: unset;
+  --font-size: inherit;
+}
+
+.schedule_item-type-sessions ul{
+    margin: 0;
+    padding: 0;
+}
+
+.schedule {
+    border-collapse: collapse;
+}
+.schedule :is(th) {
+    padding-inline-start: .1em;
+    padding-inline-end: .6em;
+}
+
+.schedule td, .schedule_item-type-sessions li:not(:last-child) {
+    padding-block-end: .4em;
+}
+
+.content .schedule a {
+    text-decoration-thickness: .1em;
+}
+
+.legend-general,
+.schedule :is(.schedule_item-type-general, .schedule_item-type-community) {
+    --mark-color: #fb7cae;
+}
+.legend-talk,
+.schedule :is(.schedule_item-type-talk, .schedule_item-type-lightning) {
+    --mark-color: #b9f54a;
+}
+.legend-sessions,
+.schedule .schedule_item-type-sessions {
+    --mark-color: #ddc982;
+}
+
+
+
+.schedule_item th, .schedule-legend span {
+    background: linear-gradient(0.75turn, #ffffff00, var(--mark-color));
+}
+
+.schedule-legend span {
+    display: inline-block;
+    padding: .3em;
+    --font-size: 1.2;
+}
+
+.host-link, .label-link, .schedule_item-own_type {
+    white-space: nowrap;
+}
+
+.label-link {
+    --text-wght: 300;
+    --font-size: 1.2;
+}
+
+.host-link:has(+ .host-link):after {
+    content: ',';
+}
+
 .clips-container {
     max-width: initial;
     /* for target 1080p/50  */
@@ -876,7 +1075,7 @@ ol.news{
         "filler-1 content"
         "logo-text content"
         "logo-text content"
-        "filler-2 content"
+        "filler-2 filler-2"
         "reimagination reimagination";
     height: 100%;
     border: 25px solid white;
@@ -885,6 +1084,18 @@ ol.news{
 
 .clips-container .presentation-payload {
     padding-left: 50px;
+    padding-top: 30px;
+
+    /* bottom align content */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* this is an adjustment to bring the base-line down to the logo/title baseline */
+    margin-bottom: -0.2em;
+    z-index: 100;
+    position: relative;
+    /* end micro adjustment */
+
     h1 {
         --font-size: 9.1;
         --text-wght: 650;
@@ -892,7 +1103,16 @@ ol.news{
         text-transform: uppercase;
         margin: 0;
         line-height: 1;
+        white-space: pre-wrap;
     }
+
+    &.adjust-long-title h1 {
+        --font-size: 7.8;
+    }
+    &.adjust-very-long-title h1 {
+         --font-size: 7.1;
+    }
+
     .heading_anchor {
         display: none;
     }
@@ -910,11 +1130,35 @@ ol.news{
          * h1 font-size/line-height is important as well!
          * */
         line-height: 1.2;
+        margin: 0;
+        white-space: nowrap;
     }
-    li:after{
+    li:after {
         content: ", ";
     }
-    li:first-child:after{
+    li:last-child:after{
         content: ""
     }
+}
+
+@media print {
+  :root, body {
+    background: white;
+    --document-font-size-pt: 8;
+  }
+  .wrapper{
+    width: 13cm;
+  }
+  header {
+    background: black;
+  }
+  header nav{
+    opacity: 0;
+  }
+  .content{
+        --left-padding: 0;
+  }
+  * {
+    font-size: calc(var(--font-size, 1) * var(--document-font-size-pt, 12) * 1pt);
+  }
 }
